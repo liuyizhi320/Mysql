@@ -9,3 +9,9 @@ INSERT INTO t (c1,c2) VALUES ('Three',3);<br>
 will be rewritten into:
 
 INSERT INTO t (c1,c2) VALUES ('One',1),('Two',2),('Three',3);
+
+
+
+# 截取问号前字符
+
+(CASE WHEN visit.referer_name LIKE '%?%' THEN LEFT(visit.referer_name,(INSTR(visit.referer_name, '?') - 1)) ELSE visit.referer_name END) as pk_campaign,

@@ -1,6 +1,6 @@
 # Mysql
 
-the insert statements:
+* the insert statements:
 
 INSERT INTO t (c1,c2) VALUES ('One',1);<br>
 INSERT INTO t (c1,c2) VALUES ('Two',2);<br>
@@ -12,7 +12,7 @@ INSERT INTO t (c1,c2) VALUES ('One',1),('Two',2),('Three',3);
 
 
 
-# 截取问号前字符
+* 截取问号前字符
 
 (CASE WHEN visit.referer_name LIKE '%?%' THEN LEFT(visit.referer_name,(INSTR(visit.referer_name, '?') - 1)) ELSE visit.referer_name END) as pk_campaign,
 
